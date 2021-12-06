@@ -1,0 +1,185 @@
+html{
+    font-family: 'Rancho', cursive;
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ededed 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ededed 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #ededed 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+h2{
+    font-size: 3rem;
+}
+/*Nav-bar*/
+.navegador_imagen{
+    width: 15rem;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 5rem;
+}
+.navegador_principal a{
+    padding: 1rem;
+    color:whitesmoke;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.navegador_principal a:hover{
+    color: tomato;
+}
+/*Fin Nav-bar*/
+.nav_responsiva{
+    display: none;
+}
+/*vista principal*/
+.vista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 50%);
+    height: 30rem;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+.slogan{
+    font-size: 3rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.slogan_texto{
+    color: #FF0000;
+}
+.video{
+    position:fixed;
+    min-height:80%; 
+    min-width:100%;
+    z-index: -1;
+    border-radius: 0%;
+}
+.cualidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0% 10% 0% 10%;
+}
+.titulo{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.cuerpo{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.cualidades_container{
+    background-color: black;
+    -webkit-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.66);
+    -moz-box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.66);
+    box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.66);
+    color: rgb(243, 243, 243);
+    padding: 3%;
+    text-align: center;
+    border-radius: 10%;
+    width: 12rem;
+    height: 16rem;
+}
+.container{
+    background-color: whitesmoke;
+    padding: 5%;
+}
+fieldset{
+    margin-bottom: 5rem ;
+    display: grid;
+    color: blanchedalmond;
+    background-color:  #950000;
+    border-radius: 2%;
+    border: 0;
+}
+@media(max-width:768px){
+
+    .navegador_imagen{
+     width: 10rem; 
+     }
+     nav{
+         display: flex;
+         justify-content: center;
+     }
+     .navegador_principal a{
+     display: none;
+     }
+     .vista{
+        font-size: 3rem;
+    }
+    .cualidades{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        align-items: center; 
+    } 
+    .cualidades_container{
+        margin: 1rem;
+    }
+    .cualidades_container{
+        width: 16rem;
+        height: 16rem;
+    } 
+    
+    .nav_responsiva{
+        display: grid;
+        align-items: center;
+        justify-content: center ;
+    }
+    .navegador_responsiva{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .navegador_responsiva div{
+        
+        background-color: rgb(114, 111, 106);
+        margin: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
+        width: 10rem;
+        border-radius: 5%;
+    }
+    
+ }
+.main_footer{
+    background: rgba(248,80,50,1);
+    background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(51,37,35,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(14%, rgba(248,80,50,1)), color-stop(100%, rgba(51,37,35,1)));
+    background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(51,37,35,1) 100%);
+    background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(51,37,35,1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(51,37,35,1) 100%);
+    background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 14%, rgba(51,37,35,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#332523', GradientType=0 );
+    padding: 2% 20% 2% 20%;
+    text-align: center;
+    font-size: 1.5rem;
+}   
+.boton{
+    padding: 2%;
+    margin: 5% 30% 5% 30%;
+}   
+.pie{
+    background-color: black;
+    text-align: center;
+    color: blanchedalmond;
+}
